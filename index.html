@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up - Odin</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/reset.css">
 </head>
 <body>
     <div class="main--container">
         <div class="left--container">
+            <div class="text--container">
+                <img src="/images/odin-lined.png" alt="">
+                <h1>ODIN</h1>
+            </div>
 
         </div>
         <div class="right--container">
@@ -19,21 +23,37 @@
             </h2>
             <h2>You <em>know</em> you want to.</h2>
             <form action="" method="post">
-                <div class="form--container">
+                    <div class="form--container">
                     <p>Let's do this!</p>
-                    <label for="firstName">first name*</label>
-                    <input type="text" name="firstName" id="firstName" min="3" max="30" required>
-                    <label for="lastName">last name*</label>
-                    <input type="text" name="lastName" id="lastName" min="3" max="15" required>
-                    <label for="email">email*</label>
-                    <input type="email" name="email" id="email" min="3" max="50" required>
-                    <label for="password">password*</label>
-                    <input type="password" name="password" id="password" min="6" max="50" title="Please use a strong case password, a combination of lowercase and uppercase letters, numbers and symbols." required>
-                    <label for="password2">confirm password*</label>
-                    <input type="password" name="password2" id="password2" min="6" max="50" required>
+                    <div class="input--container">
+                        <div class="form--item">    
+                            <label for="firstName">first name*</label>
+                            <input type="text" name="firstName" id="firstName" min="3" max="30" required>
+                        </div>
+                        <div class="form--item">
+                            <label for="lastName">last name*</label>
+                            <input type="text" name="lastName" id="lastName" min="3" max="15" required>
+                        </div>
+                        <div class="form--item">
+                            <label for="email">email*</label>
+                            <input type="email" name="email" id="email" min="3" max="50" required>
+                        </div>
+                        <div class="form--item">
+                            <label for="phoneNumber">phone number*</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber" min="7" max="30" required>
+                        </div>
+                        <div class="form--item">
+                            <label for="password">password*</label>
+                            <input type="password" name="password" id="password" min="6" max="50" title="Please use a strong case password, a combination of lowercase and uppercase letters, numbers and symbols." required>
+                        </div>
+                        <div class="form--item">
+                            <label for="password2">confirm password*</label>
+                            <input type="password" name="password2" id="password2" min="6" max="50" required>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit">Create Account</button>
-                Already have an account? <a href="#">Log in</a>
+                <h3>Already have an account? <a href="#">Log in</a></h3>
             </form>
         </div>
     </div>

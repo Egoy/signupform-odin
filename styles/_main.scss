@@ -1,0 +1,102 @@
+.main--container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: center;
+}
+
+.left--container {
+    height: 100%;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text--container {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    background-color: rgba(10, 10, 10, 0.5);
+    height: 150px;
+    img {
+        width: 100px;
+        display: inline;
+    }
+    h1 {
+        font-size: map-get($map: $textsize, $key: "hero");
+        display: inline-block;
+        font-family: "Norse-Bold", sans-serif;
+        color: map-get($map: $textcolor, $key: "white");
+    }
+}
+
+.right--container {
+    h2 {
+        font-size: map-get($map: $textsize, $key: header);
+        margin-bottom: 30px;
+        padding: 0 50px;
+        &:last-of-type {
+            margin-bottom: 40px;
+        }
+        em {
+            font-style: italic;
+        }
+    }
+    form {
+            background-color: white;
+            font-size: 18px;
+            label {
+                text-transform: uppercase;
+                display:block;
+                font-size: 14px;
+                font-weight: 600;
+                color: map-get($map: $textcolor, $key: "main");
+            }
+            input {
+                font-size: 18px;
+                padding: 3px 0 3px 10px;
+                border: 1px solid #E5E7EB;
+                border-radius: 4px;
+            }
+            p {
+                font-size: map-get($map: $textsize, $key: header);
+                margin-bottom: 20px;
+                font-weight: 500;
+            }
+        }
+    .form--container {
+        box-shadow: 0px 5px 10px -4px rgb(0 0 0 / 75%);
+        padding: 20px 0;
+        padding-left: 50px;
+    }
+    .input--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 500px;
+    }
+    button {
+        background-color: map-get($map: $textcolor, $key: "button");
+        outline: none;
+        border: none;
+        font-size: map-get($map: $textsize, $key: header);
+        padding: 12px 15px;
+        border-radius: 4px;
+        display: block;
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+        margin: 20px 50px;
+        box-shadow: 0px 4px 6px -3px rgb(0 0 0 / 75%);
+    }
+    h3 {
+        margin-left: 50px;
+        a {
+            text-decoration: none;
+            color: map-get($map: $textcolor, $key: "button");
+        }
+    }
+}
